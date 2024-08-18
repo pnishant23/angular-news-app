@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <h2>News Stories</h2>
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>User</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let story of stories">
+                <td>{{ story.title }}</td>
+                <td>{{ story.description }}</td>
+                <td>{{ story.user }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
